@@ -1,0 +1,9 @@
+{
+  "note": "Typical market ranges for a complete on-grid residential system (modules, inverter, structure, installation, net-metering paperwork, GST). Indicative only, not a price promise.",
+  "points": [
+    { "kw": 1, "low": 60000, "high": 75000 },
+    { "kw": 2, "low": 120000, "high": 140000 },
+    { "kw": 3, "low": 160000, "high": 210000 }
+  ],
+  "perExtraKw": { "low": 55000, "high": 65000 }
+}

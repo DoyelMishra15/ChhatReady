@@ -1,0 +1,5 @@
+{
+  "gridEmissionFactorTCo2PerMwh": 0.71,
+  "source": "CEA CO2 Baseline Database for the Indian Power Sector (v19 or later). Confirm the exact value from Appendix C.",
+  "note": "Placeholder close to the recent national weighted average. Edit this value to match the latest CEA release."
+}

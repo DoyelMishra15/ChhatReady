@@ -1,0 +1,95 @@
+{
+  "fields": {
+    "discom": {
+      "value": "Sample Power Distribution Co. Ltd.",
+      "confidence": 0.97,
+      "bbox": {
+        "left": 0.043548387096774194,
+        "top": 0.03078677309007982,
+        "width": 0.7451612903225806,
+        "height": 0.03249714937286203
+      }
+    },
+    "consumerNumber": {
+      "value": "4821093755",
+      "confidence": 0.99,
+      "bbox": {
+        "left": 0.3741935483870968,
+        "top": 0.14253135689851767,
+        "width": 0.1782258064516129,
+        "height": 0.019384264538198404
+      }
+    },
+    "billingPeriod": {
+      "value": "Monthly",
+      "confidence": 0.95,
+      "bbox": {
+        "left": 0.3741935483870968,
+        "top": 0.1750285062713797,
+        "width": 0.12096774193548387,
+        "height": 0.023375142531356898
+      }
+    },
+    "tariffCategory": {
+      "value": "LT Domestic (Single Phase)",
+      "confidence": 0.93,
+      "bbox": {
+        "left": 0.3741935483870968,
+        "top": 0.2080957810718358,
+        "width": 0.3790322580645161,
+        "height": 0.023375142531356898
+      }
+    },
+    "unitsMonth": {
+      "value": 285,
+      "confidence": 0.98,
+      "bbox": {
+        "left": 0.3741935483870968,
+        "top": 0.43842645381984036,
+        "width": 0.1282258064516129,
+        "height": 0.019954389965792473
+      }
+    },
+    "amountMonth": {
+      "value": 2412.6,
+      "confidence": 0.97,
+      "bbox": {
+        "left": 0.6991935483870968,
+        "top": 0.6795895096921323,
+        "width": 0.2346774193548387,
+        "height": 0.03249714937286203
+      }
+    },
+    "sanctionedLoadKw": {
+      "value": 4.0,
+      "confidence": 0.74,
+      "bbox": {
+        "left": 0.3741935483870968,
+        "top": 0.2411630558722919,
+        "width": 0.10403225806451613,
+        "height": 0.019954389965792473
+      }
+    }
+  },
+  "lines": [
+    "Sample Power Distribution Co. Ltd.",
+    "Electricity Bill  |  Low Tension Domestic",
+    "Consumer Number 4821093755",
+    "Billing Period Monthly",
+    "Tariff Category LT Domestic (Single Phase)",
+    "Sanctioned Load 4.0 kW",
+    "Meter Number SM-77120456",
+    "Consumption Details",
+    "Previous Reading 10,482 kWh",
+    "Current Reading 10,767 kWh",
+    "Units Consumed 285 kWh",
+    "Charges",
+    "Energy Charges ₹ 1,842.50",
+    "Fixed Charges ₹ 260.00",
+    "Electricity Duty ₹ 164.10",
+    "Fuel Surcharge ₹ 146.00",
+    "Net Amount Payable",
+    "₹ 2,412.60",
+    "This is a synthetic sample bill generated for demonstration. Not a real document."
+  ]
+}

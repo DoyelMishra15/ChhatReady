@@ -1,0 +1,62 @@
+@import 'tailwindcss';
+
+@font-face { font-family: 'Plus Jakarta Sans'; font-weight: 400; font-display: swap; src: url('/fonts/PlusJakartaSans_400Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-weight: 600; font-display: swap; src: url('/fonts/PlusJakartaSans_600SemiBold.ttf') format('truetype'); }
+@font-face { font-family: 'Plus Jakarta Sans'; font-weight: 700; font-display: swap; src: url('/fonts/PlusJakartaSans_700Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Fraunces'; font-weight: 600; font-display: swap; src: url('/fonts/Fraunces_600SemiBold.ttf') format('truetype'); }
+
+@theme {
+  --color-paper: #faf8f3;
+  --color-surface: #ffffff;
+  --color-ink: #14201a;
+  --color-muted: #5b685f;
+  --color-line: #e7e2d6;
+  --color-primary: #0b6b4f;
+  --color-primary-strong: #085640;
+  --color-primary-soft: #e3f2eb;
+  --color-sun: #f5a524;
+  --color-sun-strong: #c47f06;
+  --color-sun-soft: #fff3dc;
+  --color-warn: #b54708;
+  --color-warn-soft: #fef0e1;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdecea;
+  --color-ok: #067647;
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --radius-card: 1rem;
+  --radius-hero: 1.5rem;
+  --shadow-float: 0 1px 2px rgba(20, 32, 26, 0.06), 0 12px 32px rgba(20, 32, 26, 0.09);
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { @apply bg-paper text-ink font-sans antialiased; font-size: 16px; line-height: 1.55; }
+  h1, h2, h3 { text-wrap: balance; }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; border-radius: 6px; }
+  ::selection { background: var(--color-sun-soft); }
+  button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+  }
+}
+
+@layer components {
+  .font-display-num { font-family: var(--font-display); font-variant-numeric: lining-nums tabular-nums; letter-spacing: -0.02em; }
+  .tnum { font-variant-numeric: tabular-nums; }
+  .container-page { @apply mx-auto w-full px-4 sm:px-6; max-width: 1120px; }
+  .skeleton { @apply rounded-xl bg-line/60; animation: pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: 0.45; } }
+}
+
+/* Leaflet + geoman tweaks so the map controls feel native to the rest of the app */
+.leaflet-container { font-family: var(--font-sans); border-radius: inherit; }
+.leaflet-bar a { width: 40px !important; height: 40px !important; line-height: 40px !important; }
+.leaflet-pm-toolbar .button-container a.leaflet-buttons-control-button { width: 40px !important; height: 40px !important; }
+.leaflet-pm-toolbar .control-icon { width: 24px !important; height: 24px !important; }
+
+@keyframes sheetIn { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes toastIn { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes growX { from { transform: scaleX(0); } to { transform: scaleX(1); } }

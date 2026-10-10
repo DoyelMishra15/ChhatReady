@@ -1,0 +1,73 @@
+{
+  "fields": {
+    "totalPrice": {
+      "value": 225000,
+      "confidence": 0.96,
+      "bbox": {
+        "left": 0.6895161290322581,
+        "top": 0.5114025085518814,
+        "width": 0.24435483870967742,
+        "height": 0.033637400228050174
+      }
+    },
+    "systemKw": {
+      "value": 3,
+      "confidence": 0.95,
+      "bbox": {
+        "left": 0.043548387096774194,
+        "top": 0.24743443557582667,
+        "width": 0.5258064516129032,
+        "height": 0.02451539338654504
+      }
+    },
+    "panels": {
+      "value": "540 Wp Mono PERC x 6 nos.",
+      "confidence": 0.9,
+      "bbox": {
+        "left": 0.043548387096774194,
+        "top": 0.2844925883694413,
+        "width": 0.4806451612903226,
+        "height": 0.022234891676168756
+      }
+    },
+    "inverter": {
+      "value": "3 kW on-grid string inverter",
+      "confidence": 0.9,
+      "bbox": {
+        "left": 0.043548387096774194,
+        "top": 0.31413911060433297,
+        "width": 0.4274193548387097,
+        "height": 0.022234891676168756
+      }
+    },
+    "warranty": {
+      "value": "Panels 25 years performance, inverter 5 years",
+      "confidence": 0.88,
+      "bbox": {
+        "left": 0.043548387096774194,
+        "top": 0.44640820980615736,
+        "width": 0.65,
+        "height": 0.022234891676168756
+      }
+    }
+  },
+  "lines": [
+    "Sample Solar Installers",
+    "Quotation for Rooftop Solar PV System (fictional installer)",
+    "Quotation No. SSI/0417",
+    "Customer Sample Household",
+    "Scope and specification",
+    "3 kW On-grid Rooftop Solar System",
+    "Solar panels: 540 Wp Mono PERC x 6 nos.",
+    "Inverter: 3 kW on-grid string inverter",
+    "Mounting structure: hot-dip galvanised",
+    "DC/AC cabling, earthing and lightning arrestor",
+    "Installation and commissioning",
+    "Warranty: Panels 25 years performance, inverter 5 years",
+    "Total price (inclusive of GST)",
+    "₹ 2,25,000",
+    "Payment: 50% advance, 50% on commissioning.",
+    "Validity: 15 days from the date of quotation.",
+    "Synthetic sample quotation for demonstration. Not a real offer."
+  ]
+}

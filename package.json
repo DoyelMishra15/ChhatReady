@@ -1,0 +1,27 @@
+{
+  "name": "chhatready",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bill in, solar application pack out. Subsidy-aware rooftop solar planner for Indian homes.",
+  "workspaces": ["packages/*", "apps/*", "infra"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "npm run dev -w @chhatready/api",
+    "dev:web": "npm run dev -w @chhatready/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build:web",
+    "build:web": "npm run build -w @chhatready/web",
+    "check": "npm run typecheck && npm run test && npm run build",
+    "deploy": "npm run build:web && npm run deploy -w @chhatready/infra",
+    "deploy:fast": "npm run build:web && npm run deploy:fast -w @chhatready/infra",
+    "destroy": "npm run destroy -w @chhatready/infra",
+    "bootstrap": "npm run bootstrap -w @chhatready/infra",
+    "smoke:textract": "tsx scripts/textract-smoke.ts",
+    "smoke:ses": "tsx scripts/ses-smoke.ts",
+    "seed:pvgis": "tsx scripts/seed-pvgis.ts",
+    "demo:assets": "python3 scripts/make_demo_assets.py"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,10 @@
+{
+  "scheme": "PM Surya Ghar: Muft Bijli Yojana (residential rooftop solar)",
+  "source": "https://pmsuryaghar.gov.in",
+  "tiers": [
+    { "uptoKw": 2, "perKw": 30000 },
+    { "uptoKw": 3, "perKw": 18000 }
+  ],
+  "capInr": 78000,
+  "notes": "Central assistance only. State top-ups vary and are not included. Paid by DBT after DISCOM inspection."
+}
